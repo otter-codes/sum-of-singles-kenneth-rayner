@@ -19,6 +19,6 @@ object SumOfSingles {
   }
 
   def sumUniqueNumbers(input: List[Int]): Int = {
-    toDistinct(input).diff(diffInputAndDistinct(input)).sum
+  showUniqueNumbers(input).sum
   }
 }
