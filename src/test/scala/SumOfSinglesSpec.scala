@@ -12,7 +12,7 @@ class SumOfSinglesSpec extends WordSpec with MustMatchers{
       SumOfSingles.sumInt(List(1,2,3)) mustEqual 6
     }
 
-    "given a list (1,2,3,2,1) must return list(1,2)" in {
+    "given a list (1,2,3,2,1) must return list(1,2,3)" in {
       SumOfSingles.toDistinct(List(1,2,3,2,1)) mustEqual List(1,2,3)
     }
     "given a list (1,2,3,2,1) must return a list showing diff between original list and distinct list" in {
@@ -34,6 +34,10 @@ class SumOfSinglesSpec extends WordSpec with MustMatchers{
     "given a list (1,1,2,2,3,3,4,5) must return the sum of the unique numbers(9)" in {
 
       SumOfSingles.sumUniqueNumbers(List(1,1,2,2,3,3,4,5)) mustEqual 9
+    }
+    "one line version of given a list (1,1,2,2,3,3,4,5) must return the sum of the unique numbers(9)" in {
+
+      SumOfSingles.sumUniqueNumbers2(List(1,1,2,2,3,3,4,5)) mustEqual 9
     }
 
 
